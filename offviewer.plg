@@ -6,30 +6,53 @@
 --------------------Configuration: offviewer - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3F.tmp" with contents
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP45.tmp" with contents
 [
 /nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/offviewer.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"F:\程序\WatermarkSystem\offviewer.cpp"
+"F:\程序\WatermarkSystem(C++)\anneal.cpp"
+"F:\程序\WatermarkSystem(C++)\face.cpp"
+"F:\程序\WatermarkSystem(C++)\matrix.cpp"
+"F:\程序\WatermarkSystem(C++)\mesh.cpp"
+"F:\程序\WatermarkSystem(C++)\OFFGLUT.CPP"
+"F:\程序\WatermarkSystem(C++)\offviewer.cpp"
+"F:\程序\WatermarkSystem(C++)\vector.cpp"
+"F:\程序\WatermarkSystem(C++)\watermark.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3F.tmp" 
-Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP40.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP45.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP46.tmp" with contents
 [
-kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib OpenGL32.lib glu32.lib glaux.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/offviewer.pdb" /debug /machine:I386 /out:"Debug/offviewer.exe" /pdbtype:sept 
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib OpenGL32.lib glu32.lib glaux.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/offviewer.pdb" /debug /machine:I386 /out:"offviewer.exe" /pdbtype:sept 
+".\Debug\anneal.obj"
+".\Debug\face.obj"
+".\Debug\matrix.obj"
+".\Debug\mesh.obj"
+".\Debug\OFFGLUT.OBJ"
 ".\Debug\offviewer.obj"
+".\Debug\vector.obj"
+".\Debug\watermark.obj"
 ]
-Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP40.tmp"
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP46.tmp"
 <h3>Output Window</h3>
 Compiling...
+anneal.cpp
+face.cpp
+matrix.cpp
+mesh.cpp
+OFFGLUT.CPP
 offviewer.cpp
+vector.cpp
+watermark.cpp
+F:\程序\WatermarkSystem(C++)\watermark.cpp(312) : warning C4305: 'argument' : truncation from 'const double' to 'float'
 Linking...
-Creating command line "bscmake.exe /nologo /o"Debug/offviewer.bsc"  ".\Debug\offviewer.sbr""
+LINK : LNK6004: offviewer.exe not found or not built by the last incremental link; performing full link
+Creating command line "bscmake.exe /nologo /o"Debug/offviewer.bsc"  ".\Debug\anneal.sbr" ".\Debug\face.sbr" ".\Debug\matrix.sbr" ".\Debug\mesh.sbr" ".\Debug\OFFGLUT.SBR" ".\Debug\offviewer.sbr" ".\Debug\vector.sbr" ".\Debug\watermark.sbr""
 Creating browse info file...
 <h3>Output Window</h3>
 
 
 
 <h3>Results</h3>
-offviewer.exe - 0 error(s), 0 warning(s)
+offviewer.exe - 0 error(s), 1 warning(s)
 </pre>
 </body>
 </html>

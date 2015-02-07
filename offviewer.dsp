@@ -73,7 +73,7 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=link.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /debug /machine:I386 /pdbtype:sept
-# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib OpenGL32.lib glu32.lib glaux.lib /nologo /subsystem:console /debug /machine:I386 /pdbtype:sept
+# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib OpenGL32.lib glu32.lib glaux.lib /nologo /subsystem:console /debug /machine:I386 /out:"offviewer.exe" /pdbtype:sept
 
 !ENDIF 
 
@@ -83,7 +83,71 @@ LINK32=link.exe
 # Name "offviewer - Win32 Debug"
 # Begin Source File
 
+SOURCE=.\anneal.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\anneal.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\face.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\face.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\global.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\globalfunc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\matrix.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\Matrix.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\mesh.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\mesh.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\OFFGLUT.CPP
+# End Source File
+# Begin Source File
+
+SOURCE=.\OFFGLUT.H
+# End Source File
+# Begin Source File
+
 SOURCE=.\offviewer.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\vector.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\vector.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\watermark.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\watermark.h
 # End Source File
 # End Target
 # End Project
