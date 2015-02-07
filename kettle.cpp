@@ -1,13 +1,13 @@
-// openglpractice.cpp : Defines the class behaviors for the application.
+// kettle.cpp : Defines the class behaviors for the application.
 //
 
 #include "stdafx.h"
-#include "openglpractice.h"
+#include "kettle.h"
 
 #include "MainFrm.h"
 #include "ChildFrm.h"
-#include "openglpracticeDoc.h"
-#include "openglpracticeView.h"
+#include "kettleDoc.h"
+#include "kettleView.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -16,10 +16,10 @@ static char THIS_FILE[] = __FILE__;
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
-// COpenglpracticeApp
+// CKettleApp
 
-BEGIN_MESSAGE_MAP(COpenglpracticeApp, CWinApp)
-	//{{AFX_MSG_MAP(COpenglpracticeApp)
+BEGIN_MESSAGE_MAP(CKettleApp, CWinApp)
+	//{{AFX_MSG_MAP(CKettleApp)
 	ON_COMMAND(ID_APP_ABOUT, OnAppAbout)
 		// NOTE - the ClassWizard will add and remove mapping macros here.
 		//    DO NOT EDIT what you see in these blocks of generated code!
@@ -32,23 +32,22 @@ BEGIN_MESSAGE_MAP(COpenglpracticeApp, CWinApp)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// COpenglpracticeApp construction
+// CKettleApp construction
 
-COpenglpracticeApp::COpenglpracticeApp()
+CKettleApp::CKettleApp()
 {
 	// TODO: add construction code here,
 	// Place all significant initialization in InitInstance
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// The one and only COpenglpracticeApp object
-
-COpenglpracticeApp theApp;
+// The one and only CKettleApp object
+CKettleApp theApp;
 
 /////////////////////////////////////////////////////////////////////////////
-// COpenglpracticeApp initialization
+// CKettleApp initialization
 
-BOOL COpenglpracticeApp::InitInstance()
+BOOL CKettleApp::InitInstance()
 {
 	AfxEnableControlContainer();
 
@@ -75,10 +74,10 @@ BOOL COpenglpracticeApp::InitInstance()
 
 	CMultiDocTemplate* pDocTemplate;
 	pDocTemplate = new CMultiDocTemplate(
-		IDR_OPENGLTYPE,
-		RUNTIME_CLASS(COpenglpracticeDoc),
+		IDR_KETTLETYPE,
+		RUNTIME_CLASS(CKettleDoc),
 		RUNTIME_CLASS(CChildFrame), // custom MDI child frame
-		RUNTIME_CLASS(COpenglpracticeView));
+		RUNTIME_CLASS(CKettleView));
 	AddDocTemplate(pDocTemplate);
 
 	// create main MDI Frame window
@@ -150,12 +149,12 @@ BEGIN_MESSAGE_MAP(CAboutDlg, CDialog)
 END_MESSAGE_MAP()
 
 // App command to run the dialog
-void COpenglpracticeApp::OnAppAbout()
+void CKettleApp::OnAppAbout()
 {
 	CAboutDlg aboutDlg;
 	aboutDlg.DoModal();
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// COpenglpracticeApp message handlers
+// CKettleApp message handlers
 

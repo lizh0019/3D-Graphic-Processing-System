@@ -2,43 +2,48 @@
 
 [General Info]
 Version=1
-LastClass=COpenglpracticeView
-LastTemplate=CDialog
+LastClass=CKettleDoc
+LastTemplate=CDocument
 NewFileInclude1=#include "stdafx.h"
-NewFileInclude2=#include "openglpractice.h"
+NewFileInclude2=#include "kettle.h"
 LastPage=0
 
-ClassCount=6
-Class1=COpenglpracticeApp
-Class2=COpenglpracticeDoc
-Class3=COpenglpracticeView
+ClassCount=7
+Class1=CKettleApp
+Class2=CKettleDoc
+Class3=CKettleView
 Class4=CMainFrame
 
-ResourceCount=3
-Resource1=IDR_MAINFRAME
-Resource2=IDR_OPENGLTYPE
+ResourceCount=4
+Resource1=IDR_KETTLETYPE
+Resource2=IDD_ABOUTBOX
 Class5=CChildFrame
 Class6=CAboutDlg
-Resource3=IDD_ABOUTBOX
+Class7=ThreeD
+Resource3=IDR_MAINFRAME
+Resource4=IDD_DIALOG1
 
-[CLS:COpenglpracticeApp]
+[CLS:CKettleApp]
 Type=0
-HeaderFile=openglpractice.h
-ImplementationFile=openglpractice.cpp
+HeaderFile=kettle.h
+ImplementationFile=kettle.cpp
 Filter=N
 
-[CLS:COpenglpracticeDoc]
+[CLS:CKettleDoc]
 Type=0
-HeaderFile=openglpracticeDoc.h
-ImplementationFile=openglpracticeDoc.cpp
+HeaderFile=kettleDoc.h
+ImplementationFile=kettleDoc.cpp
 Filter=N
+BaseClass=CDocument
+VirtualFilter=DC
+LastObject=ID_FILE_OPEN
 
-[CLS:COpenglpracticeView]
+[CLS:CKettleView]
 Type=0
-HeaderFile=openglpracticeView.h
-ImplementationFile=openglpracticeView.cpp
+HeaderFile=kettleView.h
+ImplementationFile=kettleView.cpp
 Filter=C
-LastObject=COpenglpracticeView
+LastObject=IDM_PROCESS
 BaseClass=CView
 VirtualFilter=VWC
 
@@ -48,6 +53,8 @@ Type=0
 HeaderFile=MainFrm.h
 ImplementationFile=MainFrm.cpp
 Filter=T
+BaseClass=CMDIFrameWnd
+VirtualFilter=fWC
 
 
 [CLS:CChildFrame]
@@ -59,10 +66,9 @@ Filter=M
 
 [CLS:CAboutDlg]
 Type=0
-HeaderFile=openglpractice.cpp
-ImplementationFile=openglpractice.cpp
+HeaderFile=kettle.cpp
+ImplementationFile=kettle.cpp
 Filter=D
-LastObject=CAboutDlg
 
 [DLG:IDD_ABOUTBOX]
 Type=1
@@ -99,9 +105,9 @@ Command7=ID_FILE_PRINT
 Command8=ID_APP_ABOUT
 CommandCount=8
 
-[MNU:IDR_OPENGLTYPE]
+[MNU:IDR_KETTLETYPE]
 Type=1
-Class=COpenglpracticeView
+Class=CKettleView
 Command1=ID_FILE_NEW
 Command2=ID_FILE_OPEN
 Command3=ID_FILE_CLOSE
@@ -112,18 +118,26 @@ Command7=ID_FILE_PRINT_PREVIEW
 Command8=ID_FILE_PRINT_SETUP
 Command9=ID_FILE_MRU_FILE1
 Command10=ID_APP_EXIT
-Command11=ID_EDIT_UNDO
-Command12=ID_EDIT_CUT
-Command13=ID_EDIT_COPY
-Command14=ID_EDIT_PASTE
-Command15=ID_VIEW_TOOLBAR
-Command16=ID_VIEW_STATUS_BAR
-Command17=ID_WINDOW_NEW
-Command18=ID_WINDOW_CASCADE
-Command19=ID_WINDOW_TILE_HORZ
-Command20=ID_WINDOW_ARRANGE
-Command21=ID_APP_ABOUT
-CommandCount=21
+Command11=ID_OPEN_3DRMA
+Command12=ID_EDIT_UNDO
+Command13=ID_EDIT_CUT
+Command14=ID_EDIT_COPY
+Command15=ID_EDIT_PASTE
+Command16=ID_VIEW_TOOLBAR
+Command17=ID_VIEW_STATUS_BAR
+Command18=ID_WINDOW_NEW
+Command19=ID_WINDOW_CASCADE
+Command20=ID_WINDOW_TILE_HORZ
+Command21=ID_WINDOW_ARRANGE
+Command22=IDM_LINES
+Command23=IDM_POINTS
+Command24=IDM_SHADE
+Command25=IDM_TEXTURED
+Command26=IDM_ROTATE
+Command27=IDM_TRIANGLE
+Command28=IDM_PROCESS
+Command29=ID_APP_ABOUT
+CommandCount=29
 
 [ACL:IDR_MAINFRAME]
 Type=1
@@ -143,4 +157,18 @@ Command12=ID_EDIT_PASTE
 Command13=ID_NEXT_PANE
 Command14=ID_PREV_PANE
 CommandCount=14
+
+[CLS:ThreeD]
+Type=0
+HeaderFile=ThreeD.h
+ImplementationFile=ThreeD.cpp
+BaseClass=CDocument
+Filter=N
+
+[DLG:IDD_DIALOG1]
+Type=1
+Class=?
+ControlCount=2
+Control1=IDOK,button,1342242817
+Control2=IDCANCEL,button,1342242816
 

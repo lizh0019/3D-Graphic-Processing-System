@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "openglpractice.h"
+#include "Kettle.h"
 
 #include "ChildFrm.h"
 

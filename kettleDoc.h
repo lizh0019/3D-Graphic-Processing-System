@@ -1,30 +1,32 @@
-// openglpracticeDoc.h : interface of the COpenglpracticeDoc class
+ // kettleDoc.h : interface of the CKettleDoc class
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#if !defined(AFX_OPENGLPRACTICEDOC_H__0B4324E2_2AFE_4FFB_9111_C2B76D164F2A__INCLUDED_)
-#define AFX_OPENGLPRACTICEDOC_H__0B4324E2_2AFE_4FFB_9111_C2B76D164F2A__INCLUDED_
+#if !defined(AFX_KETTLEDOC_H__96235AA8_A39B_4E3A_8DE7_3FCA1236D4F5__INCLUDED_)
+#define AFX_KETTLEDOC_H__96235AA8_A39B_4E3A_8DE7_3FCA1236D4F5__INCLUDED_
 
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000
+#include "ThreeD.h"
 
 
-class COpenglpracticeDoc : public CDocument
+class CKettleDoc : public CDocument
 {
 protected: // create from serialization only
-	COpenglpracticeDoc();
-	DECLARE_DYNCREATE(COpenglpracticeDoc)
+	CKettleDoc();
+	DECLARE_DYNCREATE(CKettleDoc)
 
 // Attributes
 public:
-
+bool opensuccess;
+ThreeD thd;
 // Operations
 public:
 
 // Overrides
 	// ClassWizard generated virtual function overrides
-	//{{AFX_VIRTUAL(COpenglpracticeDoc)
+	//{{AFX_VIRTUAL(CKettleDoc)
 	public:
 	virtual BOOL OnNewDocument();
 	virtual void Serialize(CArchive& ar);
@@ -32,19 +34,19 @@ public:
 
 // Implementation
 public:
-	virtual ~COpenglpracticeDoc();
+	virtual ~CKettleDoc();
 #ifdef _DEBUG
 	virtual void AssertValid() const;
 	virtual void Dump(CDumpContext& dc) const;
 #endif
 
-protected:
-
+public:
+	afx_msg void OnOpen3drma();
 // Generated message map functions
 protected:
-	//{{AFX_MSG(COpenglpracticeDoc)
-		// NOTE - the ClassWizard will add and remove member functions here.
-		//    DO NOT EDIT what you see in these blocks of generated code !
+	//{{AFX_MSG(CKettleDoc)
+	afx_msg void OnSave3drma();
+	afx_msg void OnProcess();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };
@@ -54,4 +56,4 @@ protected:
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
 
-#endif // !defined(AFX_OPENGLPRACTICEDOC_H__0B4324E2_2AFE_4FFB_9111_C2B76D164F2A__INCLUDED_)
+#endif // !defined(AFX_KETTLEDOC_H__96235AA8_A39B_4E3A_8DE7_3FCA1236D4F5__INCLUDED_)

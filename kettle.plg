@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: kettle - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\lijunbao\LOCALS~1\Temp\RSP1B3.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/kettle.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\lizhen\kettle ÔÚ lijunbao ÉÏ\kettleView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lijunbao\LOCALS~1\Temp\RSP1B3.tmp" 
+Creating temporary file "C:\DOCUME~1\lijunbao\LOCALS~1\Temp\RSP1B4.tmp" with contents
+[
+OpenGL32.lib glu32.lib glaux.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/kettle.pdb" /debug /machine:I386 /out:"Debug/kettle.exe" /pdbtype:sept 
+".\Debug\ChildFrm.obj"
+".\Debug\kettle.obj"
+".\Debug\kettleDoc.obj"
+".\Debug\kettleView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\ThreeD.obj"
+".\Debug\kettle.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\lijunbao\LOCALS~1\Temp\RSP1B4.tmp"
+<h3>Output Window</h3>
+Compiling...
+kettleView.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/kettle.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\ChildFrm.sbr" ".\Debug\kettle.sbr" ".\Debug\kettleDoc.sbr" ".\Debug\kettleView.sbr" ".\Debug\MainFrm.sbr" ".\Debug\ThreeD.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+kettle.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

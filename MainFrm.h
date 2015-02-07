@@ -2,8 +2,8 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#if !defined(AFX_MAINFRM_H__1051E81D_DF63_4802_B94C_5B3A95C04E34__INCLUDED_)
-#define AFX_MAINFRM_H__1051E81D_DF63_4802_B94C_5B3A95C04E34__INCLUDED_
+#if !defined(AFX_MAINFRM_H__1C2EDA78_D948_4E72_9F79_457A23511F47__INCLUDED_)
+#define AFX_MAINFRM_H__1C2EDA78_D948_4E72_9F79_457A23511F47__INCLUDED_
 
 #if _MSC_VER > 1000
 #pragma once
@@ -43,8 +43,7 @@ protected:  // control bar embedded members
 protected:
 	//{{AFX_MSG(CMainFrame)
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
-		// NOTE - the ClassWizard will add and remove member functions here.
-		//    DO NOT EDIT what you see in these blocks of generated code!
+	afx_msg void OnOpen3drma();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };
@@ -54,4 +53,4 @@ protected:
 //{{AFX_INSERT_LOCATION}}
 // Microsoft Visual C++ will insert additional declarations immediately before the previous line.
 
-#endif // !defined(AFX_MAINFRM_H__1051E81D_DF63_4802_B94C_5B3A95C04E34__INCLUDED_)
+#endif // !defined(AFX_MAINFRM_H__1C2EDA78_D948_4E72_9F79_457A23511F47__INCLUDED_)
